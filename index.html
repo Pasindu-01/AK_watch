@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>PK Alarm</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Alarm & Countdown</h1>
+        
+        <div class="alarm-section">
+            <h2>Set Alarm</h2>
+            <input type="date" id="alarmDate">
+            <input type="time" id="alarmTime">
+            <button id="setAlarm">START</button>
+        </div>
+
+        <table id="alarmList">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Process</th>
+                    <th>Delet</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <div class="countdown-section">
+            <h2>Countdown timer</h2>
+            <input type="number" id="countdownMinutes" placeholder="Count" min="1">
+            <button id="startCountdown">Pin</button>
+            <div id="countdownDisplay"></div>
+        </div>
+    </div>
+
+    <audio id="alarmSound" src="alarm.mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
